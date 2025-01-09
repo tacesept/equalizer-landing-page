@@ -1,0 +1,26 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 64px;
+    border-radius: 12px;
+    border-color: transparent;
+    gap: 8px;
+  }
+
+  .apple {
+    background-color: var(--color-slate);
+    color: var(--color-white);
+  }
+
+  .android {
+    background-color: var(--color-white);
+    color: var(--color-slate);
+  }
+}

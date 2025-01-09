@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-block: 64px;
+  position: relative;
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (min-width: 768px) {
+    &::before {
+      content: "";
+      top: -7%;
+      right: -6%;
+      width: 266.67px;
+      height: 400px;
+      position: absolute;
+      background-image: url(/assets/bg-pattern-1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    h1 {
+      max-width: 15ch;
+    }
+    p {
+      max-width: 44ch;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    &::before {
+      content: "";
+      right: -14%;
+      width: 312px;
+      height: 468px;
+    }
+
+    h1 {
+      max-width: 16ch;
+    }
+    p {
+      max-width: 60ch;
+    }
+  }
+}

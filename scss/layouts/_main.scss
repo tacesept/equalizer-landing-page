@@ -1,0 +1,47 @@
+.main,
+.m-card,
+.m-text,
+.m-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  margin-top: 111px;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 380px;
+    background: url(/assets/bg-pattern-2.svg) no-repeat, black;
+    background-position: top center;
+    background-size: 312px 486px;
+  }
+
+  .image-app {
+    position: absolute;
+    top: -11%;  
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 209px; 
+  }
+
+  @media (max-width: 767px) {
+    padding-inline: 0;
+  }
+}
+
+.m-card {
+  background-color: var(--color-orange);
+  row-gap: 48px;
+  padding-block: 48px 111px;
+  padding-inline: clamp(1.25rem, -0.185rem + 6.122vw, 2.75rem);
+}
+
+.m-text {
+  gap: 40px;
+}
+
+.m-article {
+  gap: 24px;
+}
