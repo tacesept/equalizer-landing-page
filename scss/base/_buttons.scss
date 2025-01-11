@@ -1,9 +1,10 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 16px; 
+  gap: 16px;
+  cursor: pointer;
 
-  button {
+  a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,10 +18,26 @@
   .apple {
     background-color: var(--color-slate);
     color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-cyan);
+      color: var(--color-slate);
+
+      path {
+        fill: var(--color-slate);
+      }
+    }
   }
 
   .android {
     background-color: var(--color-white);
     color: var(--color-slate);
+
+    &:hover {
+      background-color: var(--color-yellow);
+      color: var(--color-slate); 
+    }
   }
 }
+
+ 

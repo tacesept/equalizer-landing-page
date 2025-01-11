@@ -16,13 +16,36 @@
 body {
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 100vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/bg-main-mobile.png) no-repeat;
+    background-position: 53px -173px;
+
+    @media (min-width: 680px) {
+      background: url(/assets/bg-main-tablet.png) no-repeat;
+      background-position: -450px -240px;
+    }
+
+    @media (min-width: 1120px) {
+      background: url(/assets/bg-main-desktop.png) no-repeat;
+      background-position: -456px -280px;
+    }
+  }
 }
 
 .wrapper {
   padding-inline: clamp(1.25rem, 5%, 2.75rem);
   width: 100%;
 
-  @media (min-width: 1280px) { 
+  @media (min-width: 1280px) {
     max-width: 70em;
     margin-inline: auto;
     padding-inline: 0;

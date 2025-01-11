@@ -11,7 +11,8 @@
     gap: 40px;
   }
 
-  @media (min-width: 768px) {
+  /* 48em breakpoint (768px) */
+  @media (min-width: 48em) {
     &::before {
       content: "";
       top: -7%;
@@ -33,7 +34,8 @@
     }
   }
 
-  @media (min-width: 1280px) {
+  /* 80em breakpoint (1280px) */
+  @media (min-width: 80em) {
     &::before {
       content: "";
       right: -14%;

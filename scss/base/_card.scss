@@ -1,0 +1,34 @@
+.m-card,
+.m-text,
+.m-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-card {
+  background-color: var(--color-orange);
+  row-gap: 48px;
+  padding-block: 48px 111px;
+  padding-inline: clamp(1.25rem, -0.185rem + 6.122vw, 2.75rem);
+
+  .m-text {
+    gap: 40px;
+  }
+
+  .m-article {
+    gap: 24px;
+  }
+
+  @media (min-width: 680px) {
+    position: absolute;
+    top: 89px;
+    right: 64px;
+    width: clamp(19.125rem, 7.765rem + 30.294vw, 32rem);
+    border-radius: 16px;
+    padding: 48px;
+  }
+
+  @media (min-width: 1120px) {
+    padding: 56px;
+  }
+}
