@@ -4,6 +4,10 @@ body {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   h1 {
     font-size: var(--fs-1);
